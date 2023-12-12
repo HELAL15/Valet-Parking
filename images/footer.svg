@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1832.97 2171.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-6 {
+        fill: #021b8c;
+        font-family: BahijTheSansArabic-Bold, 'Bahij TheSansArabic';
+        font-size: 320px;
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-2 {
+        clip-rule: evenodd;
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="cls-2" points="1066.84 0 1538.29 0 1538.29 471.45 1306.17 471.45 1306.17 232.12 1066.84 232.12 1066.84 0"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="303.49" y1="1157.03" x2="2177.99" y2="-571.55" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec1c24"/>
+      <stop offset="1" stop-color="#fff100"/>
+    </linearGradient>
+    <clipPath id="clippath-1">
+      <path class="cls-2" d="m1083.11,788.43c-92.02,92.02-241.22,92.02-333.24,0-92.02-92.02-92.02-241.22,0-333.24,92.02-92.02,241.22-92.02,333.24,0,92.02,92.02,92.02,241.22,0,333.24"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="318.46" y1="1173.28" x2="2192.96" y2="-555.31" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath-2">
+      <path class="cls-2" d="m1192.03,897.35c-152.23,152.23-398.86,152.23-551.1,0-152.23-152.23-152.23-398.86,0-551.1,73.48-73.48,171.65-114.14,275.55-114.14V0c-159.13,0-318.27,60.71-439.68,182.12-242.83,242.83-242.83,636.54,0,879.37l439.68,439.68,439.68-439.68c121.42-121.42,182.12-280.55,182.12-439.68h-232.12c0,103.9-40.66,202.07-114.14,275.55"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="184.76" y1="1442.61" x2="1868.44" y2="-218.63" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#021b8c"/>
+      <stop offset="1" stop-color="#15aff7"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <g>
+        <g class="cls-8">
+          <rect class="cls-1" x="1066.84" width="471.45" height="471.45"/>
+        </g>
+        <g class="cls-7">
+          <rect class="cls-3" x="657.84" y="363.16" width="517.29" height="517.29"/>
+        </g>
+        <g class="cls-5">
+          <rect class="cls-4" x="233.97" y="0" width="1304.32" height="1501.17"/>
+        </g>
+      </g>
+      <text class="cls-6" transform="translate(0 2002.21)"><tspan x="0" y="0">Valet Parking</tspan></text>
+    </g>
+  </g>
+</svg>
