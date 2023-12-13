@@ -1,0 +1,5 @@
+<svg id="Base_feature_icon" data-name="Base feature icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Vector" d="M0,5.333H8L4,0Zm0,5.333H8L4,16Z" transform="translate(24 8)" fill="#c4b5fd"/>
+  <path id="Vector-2" data-name="Vector" d="M1.333,0h8V32h-8A1.333,1.333,0,0,1,0,30.667V1.333A1.333,1.333,0,0,1,1.333,0Z" fill="#7c3aed"/>
+  <path id="Vector-3" data-name="Vector" d="M0,0H8A1.333,1.333,0,0,1,9.333,1.333V30.667A1.333,1.333,0,0,1,8,32H0Z" transform="translate(12)" fill="#1db5be"/>
+</svg>

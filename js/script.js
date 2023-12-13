@@ -48,32 +48,30 @@ window.addEventListener('scroll', changeBG);
 =================================================*/
 
 
-let add_btn = document.querySelectorAll('.add-basket');
-let remove_btn = document.querySelectorAll('.remove-basket');
+  var overlay = document.getElementById('overlay');
+  var video = document.getElementById('my-video');
+  var play_btn = document.getElementById('play');
+  var pause_btn = document.getElementById('pause');
+  var poster = document.getElementById('poster');
+  
+  pause_btn.style.display = 'none'
+  play_btn.style.display = 'block'
+  
+  play_btn.onclick = ()=> {
+    overlay.classList.remove('show');
+      video.play();
+      play_btn.style.display = 'none'
+      pause_btn.style.display = 'block'
+      poster.style.display = 'none'
+  }
 
-
-add_btn.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    btn.classList.remove('active');
-    btn.nextElementSibling.classList.add('active');
-  })
-})
-
-remove_btn.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    btn.classList.remove('active');
-    btn.previousElementSibling.classList.add('active');
-  })
-})
-
-let remove_from_cart = document.querySelectorAll('.remove-from-cart');
-
-remove_from_cart.forEach((btn) => {
-  let grandParent = btn.parentNode.parentNode.parentNode;
-  btn.addEventListener('click', ()=>{
-    grandParent.remove();
-  })
-});
+  pause_btn.onclick = ()=> {
+    overlay.classList.add('show');
+      video.pause();
+      pause_btn.style.display = 'none'
+      play_btn.style.display = 'block'
+      poster.style.display = 'block'
+  }
 
 
 
@@ -99,51 +97,6 @@ if (Body.style.direction = 'rtl') {
 }
 
 
-$('.articles .owl-carousel.article').owlCarousel({
-  rtl: rtlValue,
-  loop:true,
-  center:true,
-  margin:10,
-  nav:true,
-  dots: true,
-  mouseDrag:false,
-  navText:["<i class='fa-solid fa-arrow-right mx-2'></i>", "<i class='fa-solid fa-arrow-left mx-2'></i>"],
-  autoplay:false,
-  autoplayTimeout:3500,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:2
-      },
-      1000:{
-          items:3
-      }
-  }
-})
-
-$('.rates .owl-carousel').owlCarousel({
-  rtl: rtlValue,
-  loop:true,
-  center: true,
-  margin:10,
-  nav:false,
-  dots: true,
-  autoplay:false,
-  autoplayTimeout:3500,
-  responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:1
-      },
-      1000:{
-          items:1
-      }
-  }
-})
 
 $('.owl-carousel').owlCarousel({
   rtl: rtlValue,
@@ -168,25 +121,6 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
-/*================================================
-=========== counter in statics section ===========
-=================================================*/
 
-let counter_cont = document.querySelectorAll(".counter");
-
-counter_cont.forEach((count)=>{
-  let count_main = count.getAttribute('value');
-  let counter = 0;
-
-  function incCounter(){
-      counter++;
-      if(counter == count_main){
-          clearInterval(stop);
-      }
-      count.innerHTML = counter 
-  }
-
-var stop = setInterval(incCounter , 30);
-})
 
 /*===========================================================*/
