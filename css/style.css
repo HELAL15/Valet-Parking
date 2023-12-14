@@ -44,6 +44,7 @@ body {
 }
 section{
   margin-top: .5rem;
+  /* overflow-x: hidden !important; */
 }
 section.bg{
   background-color: var(--bg);
@@ -153,7 +154,7 @@ margin-bottom: 1rem;
 }
 
 .sec-title p {
-  width: 60%;
+  width: 65%;
   flex-shrink: 0;
   color: var(--grey);
   text-align: center;
@@ -291,6 +292,7 @@ margin-bottom: 1rem;
 }
  .back img {
   box-shadow: -114px 21px 100px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
 }
 .margin-t{
   margin-top: 26rem !important;
@@ -389,6 +391,7 @@ header{
   background-color: var(--main);
   position: relative;
   z-index: 2 !important;
+  height: 45vh;
 }
 header.header{
   height: 100vh;
@@ -496,6 +499,19 @@ header .header-style{
   transform: translate(-50% , 50%);
   margin: auto;
 }
+
+
+.crumb-nav ol li,
+.crumb-nav a,
+.crumb-nav li.active{
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  color: var(--white);
+}
+
 /*================================================
 ================= services =======================
 =================================================*/
@@ -958,7 +974,9 @@ footer .footer-nav li a{
 =================================================*/
 
 @media (max-width: 991px){
-
+  .landing .sec-title {
+    margin-top: -1rem;
+}
   header .header-style{
     background: url('../images/tablet-style.png');
     background-repeat: no-repeat;
