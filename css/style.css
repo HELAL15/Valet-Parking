@@ -441,8 +441,8 @@ header .header-style{
 /* .landing .img{
   margin-top: rem;
 } */
-.sec-title {
-  margin-top: 1rem;
+.landing .sec-title {
+  margin-top: -4rem;
 }
 
 .landing .sec-title h3,
