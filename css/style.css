@@ -296,7 +296,7 @@ margin-bottom: 1rem;
   box-shadow: -114px 21px 100px rgba(0, 0, 0, 0.25);
 }
 .margin-t{
-  margin-top: 19rem !important;
+  margin-top: 26rem !important;
 }
 /*=========================================
 ==========================================*/
@@ -312,8 +312,7 @@ margin-bottom: 1rem;
 ==========================================*/
 nav{
   z-index: 222222;
-  position: -webkit-sticky !important;
-  position: sticky !important;
+  position: absolute !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -442,17 +441,44 @@ header .header-style{
 /* .landing .img{
   margin-top: rem;
 } */
+.sec-title {
+  margin-top: 1rem;
+}
 
 .landing .sec-title h3,
 .landing .sec-title p{
   color: var(--white) !important;
 }
 .landing .sec-title h3{
-  font-size: 4rem !important;
+  font-size: 3.5rem !important;
 }
 .landing .sec-title p{
   font-size: 1.3rem !important;
   line-height: 1.7 !important;
+}
+
+/* .landing .img {
+  width: 100%;
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translate(-48% , -30%);
+} */
+/* .landing .img {
+  width: 80%;
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
+  transform: translate(-50% , 0%);
+  margin: auto;
+} */
+.landing .img {
+  width: 70%;
+  position: absolute;
+  bottom: -55%;
+  left: 50%;
+  transform: translate(-50% , 0%);
+  margin: auto;
 }
 /*================================================
 ================= services =======================
@@ -926,21 +952,51 @@ footer .footer-nav li a{
     width: 150px;
   }
 
-  header.header {
-    height: 90vh;
-}
 
+
+
+.landing .img {
+  width: 100%;
+  bottom: -65%;
+  left: 48%;
+  transform: translate(-48% , -30%);
+}
+}
 .margin-t {
-  margin-top: 10rem !important;
+  margin-top: 19rem !important;
 }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 625px){
 
-
+  .sec-title {
+    margin-top: 1rem;
+  }
+  
   .margin-t {
-    margin-top: 9rem !important;
+    margin-top: 7rem !important;
 }
 
   header .header-style {
@@ -953,12 +1009,16 @@ footer .footer-nav li a{
     background-position: center;
 }
 
-
-
-header.header {
-  height: 65vh;
+.landing .img {
+  width: 100% !important;
+  bottom: -35%;
+  left: 48%;
+  transform: translate(-48% , -30%);
 }
 
+header.header {
+  height: 75vh;
+}
 
 
 
@@ -994,27 +1054,6 @@ header.header {
     left: unset;
     right: 8%;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   .packages .card.shadow {
