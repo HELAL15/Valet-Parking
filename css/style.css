@@ -472,12 +472,20 @@ header .header-style{
   transform: translate(-50% , 0%);
   margin: auto;
 } */
-.landing .img {
+/* .landing .img {
   width: 70%;
   position: absolute;
   bottom: -55%;
   left: 50%;
   transform: translate(-50% , 0%);
+  margin: auto;
+} */
+.landing .img {
+  width: 70%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50% , 50%);
   margin: auto;
 }
 /*================================================
@@ -530,10 +538,10 @@ header .header-style{
   margin-bottom: 5rem;
 }
 
-.packages .card{
+.packages .card {
   border: 1px solid #D8D8D8 !important;
   padding: 3.5rem 2rem;
-  border-radius: 0;
+  border-radius: 10px;
   align-items: flex-start;
 }
 .packages .card.shadow{
