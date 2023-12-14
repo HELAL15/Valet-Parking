@@ -247,18 +247,14 @@ margin-bottom: 1rem;
 .use .img{
   width: 45%;
   position: relative;
-  -webkit-margin-start: 7rem;
-          margin-inline-start: 7rem;
+  margin: auto;
 }
 .about .img.side,
 .vip .img.side,
 .use .img.side{
   width: 45%;
   position: relative;
-  -webkit-margin-start: 0rem;
-  margin-inline-start: 0rem;
-  -webkit-margin-end: 7rem;
-          margin-inline-end: 7rem;
+  margin: auto;
 }
  .back{
   position: relative;
@@ -271,22 +267,18 @@ margin-bottom: 1rem;
   position: absolute;
   background-color: var(--main);
   top: 35%;
-  left: 18%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
   border-radius: 10px;
 }
-.back.side{
+/* .back.side{
   justify-content: flex-end;
-}
+} */
 .back.side::before {
-  content: '';
-  width: 83%;
-  height: 45%;
-  position: absolute;
-  background-color: var(--main);
-  top: 35%;
   left: unset;
-  right: 18%;
+  right: 50%;
+  transform: translateX(50%);
   z-index: -1;
   border-radius: 10px;
 }
@@ -512,7 +504,7 @@ header .header-style{
 .crumb-nav a,
 .crumb-nav li.active{
   color: var(--white);
-  font-size: 2rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 .breadcrumb-item+.breadcrumb-item::before {
@@ -547,7 +539,7 @@ header .header-style{
 .services .service-style {
   position: absolute;
   top: -25%;
-  right: -44%;
+  right: 0;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -807,12 +799,11 @@ header .header-style{
 .subscribe .subs-style{
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 40%;
-  height: 40%;
-  z-index: -1;
-  -o-object-fit: contain;
-     object-fit: contain;
+  right: 12%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 0;
 }
 .subscribe .subs-cont{
   background-color: var(--primary);
@@ -980,6 +971,14 @@ footer .footer-nav li a{
 ================ media query =====================
 =================================================*/
 
+
+
+@media (max-width: 1024px){
+  .navbar-nav{
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 991px){
   .about .intro-style1 {
     width: 80%;
@@ -997,7 +996,7 @@ footer .footer-nav li a{
     background-position: center;
   }
   
-  .about .img,
+  /* .about .img,
   .vip .img,
   .use .img{
     -webkit-margin-start: 0rem;
@@ -1009,8 +1008,8 @@ footer .footer-nav li a{
   .use .img.side{
     -webkit-margin-end: 0rem;
             margin-inline-end: 0rem;
-  }
-   .back{
+  } */
+   /* .back{
     position: relative;
     justify-content: center;
   }
@@ -1023,7 +1022,7 @@ footer .footer-nav li a{
   .back.side::before {
     left: unset;
     right: 8%;
-  }
+  } */
 
   .download .one {
     margin-right: -9rem;
@@ -1090,26 +1089,20 @@ footer .footer-nav li a{
   margin-top: 19rem !important;
 }
 
-/* .about .about-style {
-  display: none;
-}
-.intro .intro-style {
-  display: none;
-}
-.intro .intro-style {
-  left: 0%;
-  width: 16%;
-  height: 30%;
+
+.navbar-nav {
+  margin-right: 1rem !important;
 }
 
-.services .service-style {
-  position: absolute;
-  top: -10%;
-  right: -26%;
-  width: 70%;
-  height: 50%;
-} */
 
+
+.download .text h4 {
+  font-size: 3rem;
+}
+
+.download .text p{
+  margin: 2rem 0;
+}
 
 }
 
@@ -1148,6 +1141,20 @@ footer .footer-nav li a{
     width: 50%;
     height: 50%;
   } */
+  .download .text h4 {
+    font-size: 2.8rem;
+}
+.download .text p {
+  margin: 2rem 0;
+}
+  .about .img,
+.vip .img,
+.use .img{
+  margin-top: 2rem;
+}
+.about .img.side, .vip .img.side, .use .img.side {
+  margin-top: 2rem;
+}
   .sec-title {
     margin-top: 1rem;
   }
@@ -1183,7 +1190,7 @@ header.header {
 }
 
 
-  .about .img,
+  /* .about .img,
   .vip .img,
   .use .img{
     -webkit-margin-start: 0rem;
@@ -1195,8 +1202,8 @@ header.header {
   .use .img.side{
     -webkit-margin-end: 0rem;
             margin-inline-end: 0rem;
-  }
-   .back{
+  } */
+   /* .back{
     position: relative;
     justify-content: center;
   }
@@ -1209,7 +1216,7 @@ header.header {
   .back.side::before {
     left: unset;
     right: 8%;
-  }
+  } */
 
 
   .packages .card.shadow {
