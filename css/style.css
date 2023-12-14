@@ -5,11 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 :root {
-  --a:#;
-  --bg: #;
   --main: #084794;
-  --hover: #;
-  --active: # ;
   --primary: #F58F0F;
   --btn:#F58F0F;
   --white: #fff;
@@ -34,7 +30,8 @@
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden ; */
+  overflow-x: hidden !important;
   direction: rtl;
 }
 
@@ -404,7 +401,7 @@ header .header-style{
   z-index: 1 !important;
   width: 80%;
   height: 100%;
-  opacity: 1;
+  opacity: .6;
   -o-object-fit: cover;
      object-fit: cover;
      background: url('../images/desktop-style.png');
@@ -420,8 +417,19 @@ header .header-style{
 ==========================================*/
 .about{
   margin-top: 6rem !important;
+  position: relative;
 }
-
+.about .about-style {
+  position: absolute;
+  top: -10%;
+  left: -20%;
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transform: rotateY(180deg);
+}
 
 /* =========================================================== 
 ======================== courses =============================
@@ -442,7 +450,7 @@ header .header-style{
   margin-top: rem;
 } */
 .landing .sec-title {
-  margin-top: -4rem;
+  margin-top: -5rem;
 }
 
 .landing .sec-title h3,
@@ -494,6 +502,7 @@ header .header-style{
  .card{
   align-items: center;
   gap: 1rem;
+  background-color: transparent;
 }
 .card h4{
   color: var(--black);
@@ -503,15 +512,69 @@ header .header-style{
 .card p{
   color: var(--grey);
 }
+
+.services {
+  position: relative;
+}
+
 .services .card{
   align-items: center;
   gap: 1rem;
 }
-
+.services .service-style {
+  position: absolute;
+  top: -25%;
+  right: -44%;
+  width: 100%;
+  height: 70%;
+  z-index: -1;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
 .services .img-card{
   width: 50%;
   position: relative;
 }
+.services .img-card img{
+  -webkit-animation: configure-clockwise 10s infinite alternate;
+          animation: configure-clockwise 10s infinite alternate;
+}
+
+@-webkit-keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes configure-clockwise {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .services .img-card i{
   position: absolute;
@@ -585,7 +648,37 @@ header .header-style{
 /*==================================================
 ===================== intro ========================
 ===================================================*/
-
+.intro{
+  position: relative;
+}
+.intro .intro-style {
+  position: absolute;
+  bottom: -12%;
+  left: -19%;
+  width: 50%;
+  height: 50%;
+  z-index: -1;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+ .intro-style1 {
+  position: absolute;
+  bottom: -36%;
+  right: -50%;
+  width: 135%;
+  height: 135%;
+  z-index: -1;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.about .intro-style1 {
+  position: absolute;
+  bottom: -9%;
+  right: -52%;
+  width: 143%;
+  height: 149%;
+  z-index: -1;
+}
 .intro video{
   width: 100%;
   height: 90%;
@@ -685,7 +778,19 @@ header .header-style{
 /*============================================
 ================= subscribe ==================
 =============================================*/
-
+.subscribe{
+  position: relative;
+}
+.subscribe .subs-style{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: 40%;
+  z-index: -1;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .subscribe .subs-cont{
   background-color: var(--primary);
   padding: 4rem 3rem;
@@ -854,19 +959,13 @@ footer .footer-nav li a{
 
 @media (max-width: 991px){
 
-
   header .header-style{
-    opacity: 1;
     background: url('../images/tablet-style.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   
-
-
-
-
   .about .img,
   .vip .img,
   .use .img{
@@ -894,17 +993,6 @@ footer .footer-nav li a{
     left: unset;
     right: 8%;
   }
-
-
-
-
-
-
-
-
-
-
-
 
   .download .one {
     margin-right: -9rem;
@@ -960,20 +1048,39 @@ footer .footer-nav li a{
     width: 150px;
   }
 
-
-
-
 .landing .img {
   width: 100%;
   bottom: -65%;
   left: 48%;
   transform: translate(-48% , -30%);
 }
-}
+
 .margin-t {
   margin-top: 19rem !important;
 }
 
+.about .about-style {
+  display: none;
+}
+/* .intro .intro-style {
+  display: none;
+} */
+.intro .intro-style {
+  left: 0%;
+  width: 16%;
+  height: 30%;
+}
+
+.services .service-style {
+  position: absolute;
+  top: -10%;
+  right: -26%;
+  width: 70%;
+  height: 50%;
+}
+
+
+}
 
 
 
@@ -998,7 +1105,18 @@ footer .footer-nav li a{
 
 
 @media (max-width: 625px){
-
+  .intro .intro-style {
+    bottom: 0%;
+    left: 0%;
+    width: 16%;
+    height: 30%;
+  }
+  .services .service-style {
+    top: -25%;
+    right: 0%;
+    width: 50%;
+    height: 50%;
+  }
   .sec-title {
     margin-top: 1rem;
   }
@@ -1010,7 +1128,6 @@ footer .footer-nav li a{
   header .header-style {
     width: 95%;
     left: 4%;
-    opacity: 1;
     background: url('../images/mobile-style.png');
     background-repeat: no-repeat;
     background-size: cover;
