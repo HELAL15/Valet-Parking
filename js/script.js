@@ -47,35 +47,70 @@ window.addEventListener('scroll', changeBG);
 ================== cart ==========================
 =================================================*/
 
-
-  var overlay = document.getElementById('overlay');
-  var video = document.getElementById('my-video');
-  var play_btn = document.getElementById('play');
-  var pause_btn = document.getElementById('pause');
-  var poster = document.getElementById('poster');
+  const elementsArray = [
+    document.getElementById('overlay'),
+    document.getElementById('my-video'),
+    document.getElementById('play'),
+    document.getElementById('pause'),
+    document.getElementById('poster')
+  ];
   
+  let overlay = elementsArray[0];
+  let video = elementsArray[1];
+  let play_btn = elementsArray[2];
+  let pause_btn = elementsArray[3];
+  let poster = elementsArray[4];
+  
+  pause_btn !== null ? pause_btn.style.display = 'none' : '';
+  let none = pause_btn !== null ? pause_btn.style.display = 'none' : '';;
+
+  let isPlaying = true;
+
+  none ? isPlaying = true : isPlaying = false ;
+
+if(play_btn !== null){ 
+
+/*============ play video ================*/
+const for_play = ()=>{
+  play_btn.style.display = 'none';
+  pause_btn.style.display = 'block';
+  poster.style.display = 'none';
+  isPlaying = false
+  overlay.classList.remove('show');
+}
+
+  const play_video = ()=>{
+    if(isPlaying){
+      video.play();
+      for_play();
+    }
+  }
+
+  play_btn.onclick = ()=> {play_video()}
+
+  /*===========================================*/
+
+      /*===== pause video ======*/
+
+const for_pause = ()=>{
+  isPlaying = true
+  overlay.classList.add('show');
   pause_btn.style.display = 'none'
   play_btn.style.display = 'block'
-  
-  play_btn.onclick = ()=> {
-    overlay.classList.remove('show');
-      video.play();
-      play_btn.style.display = 'none'
-      pause_btn.style.display = 'block'
-      poster.style.display = 'none'
-  }
-
-  pause_btn.onclick = ()=> {
-    overlay.classList.add('show');
+  poster.style.display = 'block'
+}
+  const pause_video = ()=>{
+    if(!isPlaying){
       video.pause();
-      pause_btn.style.display = 'none'
-      play_btn.style.display = 'block'
-      poster.style.display = 'block'
+      for_pause();
+    }
   }
 
+  pause_btn.onclick = ()=> {pause_video()}
+  video.onclick = ()=>{pause_video()}
 
-
-
+// =================================================*/
+}
 
 
 $(".flatpickr-input").flatpickr();
