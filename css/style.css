@@ -292,7 +292,7 @@ margin-bottom: 1rem;
 }
  .back img {
   box-shadow: -114px 21px 100px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
+  border-radius: 35px;
 }
 .margin-t{
   margin-top: 26rem !important;
@@ -302,9 +302,13 @@ margin-bottom: 1rem;
 
 
 /*==================================================
-================== contacts ========================
+================== rules ========================
 ===================================================*/
-
+.rules p{
+  color: var(--grey);
+  font-size: 1.3rem;
+  line-height: 2; 
+}
 
 /*=========================================
 ================= navbar ==================
@@ -425,13 +429,16 @@ header .header-style{
 .about .about-style {
   position: absolute;
   top: -10%;
-  left: -20%;
-  width: 50%;
-  height: 50%;
+  left: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* height: 50%; */
   z-index: -1;
-  -o-object-fit: contain;
-  object-fit: contain;
   transform: rotateY(180deg);
+  /* -o-object-fit: contain;
+  object-fit: contain;
+  transform: rotateY(180deg); */
 }
 
 /* =========================================================== 
@@ -541,11 +548,11 @@ header .header-style{
   position: absolute;
   top: -25%;
   right: -44%;
-  width: 100%;
-  height: 70%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* height: 70%; */
   z-index: -1;
-  -o-object-fit: contain;
-  object-fit: contain;
 }
 .services .img-card{
   width: 50%;
@@ -670,29 +677,29 @@ header .header-style{
 .intro .intro-style {
   position: absolute;
   bottom: -12%;
-  left: -19%;
-  width: 50%;
-  height: 50%;
+  left: -0%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   z-index: -1;
-  -o-object-fit: contain;
-  object-fit: contain;
 }
  .intro-style1 {
   position: absolute;
   bottom: -36%;
-  right: -50%;
-  width: 135%;
-  height: 135%;
+  right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   z-index: -1;
-  -o-object-fit: contain;
-  object-fit: contain;
 }
 .about .intro-style1 {
   position: absolute;
   bottom: -9%;
-  right: -52%;
-  width: 143%;
-  height: 149%;
+  right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* height: 149%; */
   z-index: -1;
 }
 .intro video{
@@ -974,6 +981,12 @@ footer .footer-nav li a{
 =================================================*/
 
 @media (max-width: 991px){
+  .about .intro-style1 {
+    width: 80%;
+}
+.intro-style1 {
+  width: 80%;
+}
   .landing .sec-title {
     margin-top: -1rem;
 }
@@ -1077,12 +1090,12 @@ footer .footer-nav li a{
   margin-top: 19rem !important;
 }
 
-.about .about-style {
+/* .about .about-style {
   display: none;
 }
-/* .intro .intro-style {
+.intro .intro-style {
   display: none;
-} */
+}
 .intro .intro-style {
   left: 0%;
   width: 16%;
@@ -1095,7 +1108,7 @@ footer .footer-nav li a{
   right: -26%;
   width: 70%;
   height: 50%;
-}
+} */
 
 
 }
@@ -1123,7 +1136,7 @@ footer .footer-nav li a{
 
 
 @media (max-width: 625px){
-  .intro .intro-style {
+  /* .intro .intro-style {
     bottom: 0%;
     left: 0%;
     width: 16%;
@@ -1134,7 +1147,7 @@ footer .footer-nav li a{
     right: 0%;
     width: 50%;
     height: 50%;
-  }
+  } */
   .sec-title {
     margin-top: 1rem;
   }
