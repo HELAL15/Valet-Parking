@@ -76,7 +76,7 @@ svg {
   border: none;
   color: white !important;
   transition: .3s;
-  border-radius: 0;
+  border-radius: 5px;
   padding: .6rem 1.2rem;
 }
 .btn.padding{
@@ -155,14 +155,14 @@ letter-spacing: -0.06rem;
 margin-bottom: 1rem;
 }
 
-.sec-title p{
-width: 45%;
-flex-shrink: 0;
-color: var(--grey);
-text-align: center;
-font-weight: 500;
-line-height: 1.6875rem;
-margin-bottom: 2.5rem;
+.sec-title p {
+  width: 60%;
+  flex-shrink: 0;
+  color: var(--grey);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6875rem;
+  margin-bottom: 2.5rem;
 }
 
 
@@ -295,6 +295,9 @@ margin-bottom: 2.5rem;
  .back img {
   box-shadow: -114px 21px 100px rgba(0, 0, 0, 0.25);
 }
+.margin-t{
+  margin-top: 19rem !important;
+}
 /*=========================================
 ==========================================*/
 
@@ -386,22 +389,30 @@ font-weight: 400;
 line-height: 160%; 
 }
 
-
 header{
   background-color: var(--main);
-  height: 100vh;
   position: relative;
+  z-index: 2 !important;
+}
+header.header{
+  height: 100vh;
 }
 
 header .header-style{
   position: absolute;
   top: 0;
-  left: 15%;
-  z-index: 1;
-  width: 75%;
-  opacity: .7;
-  -o-object-fit: contain;
-     object-fit: contain;
+  left: 10%;
+  z-index: 1 !important;
+  width: 80%;
+  height: 100%;
+  opacity: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+     background: url('../images/desktop-style.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
 }
 
 
@@ -409,7 +420,7 @@ header .header-style{
 ================= about ===================
 ==========================================*/
 .about{
-  margin-top: 20rem !important;
+  margin-top: 6rem !important;
 }
 
 
@@ -428,9 +439,9 @@ header .header-style{
   padding-top: 2rem;
 }
 
-.landing .img{
-  margin-top: 2rem;
-}
+/* .landing .img{
+  margin-top: rem;
+} */
 
 .landing .sec-title h3,
 .landing .sec-title p{
@@ -810,7 +821,14 @@ footer .footer-nav li a{
 @media (max-width: 991px){
 
 
-
+  header .header-style{
+    opacity: 1;
+    background: url('../images/tablet-style.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
 
 
 
@@ -905,11 +923,44 @@ footer .footer-nav li a{
     gap: 1.5rem;
   }
   .navbar-brand {
-    width: 120px;
+    width: 150px;
   }
+
+  header.header {
+    height: 90vh;
+}
+
+.margin-t {
+  margin-top: 10rem !important;
+}
+
 }
 
 @media (max-width: 625px){
+
+
+  .margin-t {
+    margin-top: 9rem !important;
+}
+
+  header .header-style {
+    width: 95%;
+    left: 4%;
+    opacity: 1;
+    background: url('../images/mobile-style.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+header.header {
+  height: 65vh;
+}
+
+
+
 
   .download .one {
     margin-right: 0rem;
@@ -988,7 +1039,7 @@ footer .footer-nav li a{
     gap: 1rem;
   }
   .navbar-brand {
-    width: 100px;
+    width: 140px;
   }
 }
 

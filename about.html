@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rajaa-Faidah</title>
+  <title>Valet Parking</title>
 
-  <link rel="icon" type="image/x-icon" href="" />
+  <link rel="icon" type="image/x-icon" href="images/fav.png" />
 
   <!-- font awesome link  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -17,10 +17,6 @@
   <!-- Bootstrap link  -->
   <link rel="stylesheet" href="css/plugin/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="css/plugin/bootstrap-icons.min.css">
-
-  <!-- IF LANG == EN -->
-  <!-- <link rel="stylesheet" href="css/plugin/bootstrap.min.css"> -->
-  <!-- END IF -->
 
   <!-- animate link  -->
   <link rel="stylesheet" href="css/plugin/animate.css" />
@@ -38,168 +34,394 @@
   <!-- select link -->
   <link rel="stylesheet" href="css/plugin/nice-select.css">
 
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
+
   <!-- custom css file link  -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- IF LANG == EN -->
-  <!-- <link rel="stylesheet" href="css/style.ltr.css" /> -->
-  <!-- END IF -->
 </head>
 
 <body>
 
-  <section class="bg padding unmargin">
-    <div class="container d-flex justify-content-center">
-      <div class="contacts ">
-        <div class="phone contact">
-          <a href="tel: +212 6 00 00 00 00"><i class="fas fa-phone-alt"></i> +212604400</a>
+  <header>
+    <!-- background-style for header -->
+    <img src="images/header-style.png" class="header-style" alt="">
+    <!-- ------------------------- -->
+    <nav class="navbar navbar-expand-lg " id="nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="">
+        </a>
+        <div class="navbar-collapse">
+          <div class="collapse-header d-flex justify-content-between align-items-center p-2 mb-3">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="">
+            </a>
+            <i class="fas fa-close" id="close"></i>
+          </div>
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link active" href="about.html">من نحن</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="services.html">الخدمات</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="features.html">مميزات التطبيق</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="contactUs.html">تواصل معنا</a>
+            </li>
+          </ul>
+          <a href="request.html" class="btn btn-primary my-2 mx-2" type="submit">طلب تسجيل مرفق</a>
         </div>
-        <div class="phone contact">
-          <a href="tel: +212 6 00 00 00 00"><i class="fas fa-phone-alt"></i> +212600000000</a>
+        <button class="navbar-toggler" type="button">
+          <i class="fas fa-bars" id="open"></i>
+        </button>
+      </div>
+    </nav>
+    <section class="landing mt-0 ">
+      <div class="container">
+        <nav style="--bs-breadcrumb-divider: '//';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+            <li class="breadcrumb-item active" aria-current="page">من نحن</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+  </header>
+
+
+
+
+
+
+  <section class="about mt-5">
+    <div class="container">
+      <div class="sec-title">
+        <h3>من نحن؟</h3>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="text">
+            <h4>تطبيق الفاليه</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+          <a href="about.html" class="btn btn-primary">
+            <span>المزيد</span>
+            <i class="fas fa-plus mx-2"></i>
+          </a>
         </div>
-        <div class="email contact">
-          <a href="mailto:1ahmedhelal1@gmail.com"><i class="fa-solid fa-envelope"></i> companyMail@gmail.com</a>
+        <div class="col-md-6 d-flex  back side">
+          <div class="img side">
+            <img src="images/02.png" alt="about">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <nav class="navbar navbar-expand-lg py-1" id="nav">
+
+
+  <section class="vip">
     <div class="container">
-      <a class="navbar-brand fw-bold fs-4" href="index.html">
-        <img src="images/Logo-02.png" alt="">
-      </a>
-      <div class=" navbar-collapse">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-          <div class="nav-header d-flex justify-content-between align-items-center px-4 py-4">
-            <a class="navbar-brand fw-bold fs-4" href="index.html">
-              <img src="images/Logo-02.png" alt="">
+      <div class="row align-items-center">
+        <div class="col-md-6 d-flex  back">
+          <div class="img">
+            <img src="images/02.png" alt="about">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="text">
+            <h4>من هم عملاء vip</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+          <a href="about.html" class="btn btn-primary">
+            <span>المزيد</span>
+            <i class="fas fa-plus mx-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="use">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="text">
+            <h4>طريقة استخدام التطبيق</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+          <a href="about.html" class="btn btn-primary">
+            <span>المزيد</span>
+            <i class="fas fa-plus mx-2"></i>
+          </a>
+        </div>
+        <div class="col-md-6 d-flex back side">
+          <div class="img side">
+            <img src="images/about.png" alt="about">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="services">
+    <div class="container">
+      <div class="sec-title">
+        <h3>الخدمات</h3>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img-card">
+              <img src="images/service.svg" alt="">
+              <i class="fa-regular fa-handshake"></i>
+            </div>
+            <h4>الخدمة تكتب هنا</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img-card">
+              <img src="images/service.svg" alt="">
+              <i class="fa-regular fa-handshake"></i>
+            </div>
+            <h4>الخدمة تكتب هنا</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img-card">
+              <img src="images/service.svg" alt="">
+              <i class="fa-regular fa-handshake"></i>
+            </div>
+            <h4>الخدمة تكتب هنا</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="intro py-5">
+    <div class="sec-title">
+      <h3>الفيديو التعريفي</h3>
+    </div>
+    <div class="container">
+      <div class="intro-video">
+        <div class="overlay show" id="overlay">
+          <i class="fas fa-play play" id="play"></i>
+          <i class="fas fa-pause pause" id="pause"></i>
+        </div>
+        <img src="images/Video.png" alt="" id="poster">
+        <video src="images/video.mp4" poster="images/Video.png" id="my-video"></video>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="features py-5">
+    <div class="container">
+      <div class="sec-title">
+        <h3>مميزات التطبيق</h3>
+        <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص
+          أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img">
+              <img src="images/feature1.svg" alt="" class="">
+            </div>
+            <h4>سهولة الاستخدام</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img">
+              <img src="images/feature2.svg" alt="" class="">
+            </div>
+            <h4>المرونة</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img">
+              <img src="images/feature3.svg" alt="" class="">
+            </div>
+            <h4>سير عمل قوي</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img">
+              <img src="images/feature1.svg" alt="" class="">
+            </div>
+            <h4>سهولة الاستخدام</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img">
+              <img src="images/feature2.svg" alt="" class="">
+            </div>
+            <h4>المرونة</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="img">
+              <img src="images/feature3.svg" alt="" class="">
+            </div>
+            <h4>سير عمل قوي</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="packages my-5 py-5">
+    <div class="container">
+      <div class="sec-title">
+        <h3>الباقات</h3>
+      </div>
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <div class="card">
+            <h4 class="price">
+              <span>200</span>
+              <span>ريال</span>
+            </h4>
+            <h5 class="package-name">اسم الباقة</h5>
+            <ul class="package-details ">
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- class 'shadow for the middle card only' -->
+          <div class="card shadow">
+            <h4 class="price">
+              <span>200</span>
+              <span>ريال</span>
+            </h4>
+            <h5 class="package-name">اسم الباقة</h5>
+            <ul class="package-details">
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h4 class="price">
+              <span>200</span>
+              <span>ريال</span>
+            </h4>
+            <h5 class="package-name">اسم الباقة</h5>
+            <ul class="package-details">
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+              <li>تفاصيل الباقة تكتب هنا</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="download py-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-6 justify-content-center">
+          <div class="img ">
+            <img src="images/download.png" alt="about">
+          </div>
+        </div>
+        <div class="col-md-6 one">
+          <div class="text">
+            <h4>تحميل التطبيق</h4>
+            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+              للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+          </div>
+          <div class="download-links d-flex">
+            <a href="#">
+              <img src="images/download-android.png" alt="download-android">
             </a>
-            <i class="fas fa-close close" id="close"></i>
-          </div>
-          <li class="nav-item mx-lg-3 mx-4">
-            <a class="nav-link " aria-current="page" href="index.html#home">الصفحة الرئيسية</a>
-          </li>
-          <li class="nav-item mx-lg-3 mx-4">
-            <a class="nav-link active" href="index.html#about">نبذة</a>
-          </li>
-          <li class="nav-item mx-lg-3 mx-4">
-            <a class="nav-link" href="index.html#articles">المقالات</a>
-          </li>
-          <li class="nav-item mx-lg-3 mx-4">
-            <a class="nav-link" href="index.html#courses">الدورات والبرامج</a>
-          </li>
-          <li class="nav-item mx-lg-3 mx-4">
-            <a class="nav-link" href="index.html#videos">الفيديوهات</a>
-          </li>
-        </ul>
-      </div>
-      <div class="actions d-flex justify-content-between gap-lg-3 gap-2">
-        <!-- cart button -->
-        <button class="btn round" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample"><i class="fa-solid fa-cart-shopping"></i></button>
-        <!-- /*=========*/ -->
-        <button class="btn btn-primary px-4 round" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">حجز
-          موعد</button>
-      </div>
-      <button class="navbar-toggler open">
-        <i class="fas fa-bars" id="open"></i>
-      </button>
-    </div>
-
-  </nav>
-
-  <!--=============== cart canvas ==================-->
-  <div class="offcanvas offcanvas-start cart-canvas" tabindex="-1" id="offcanvasExample"
-    aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">قائمة التسوق</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div class="row gy-3">
-        <div class="col-md-12">
-          <div class="card d-flex justify-content-between align-items-center flex-row bg">
-            <div class="d-flex flex-column">
-              <div class="info text">
-                <h5 class="fw-bold">اسم الدورة</h5>
-                <div class="d-flex gap-1 mt-3">
-                  <h6>السعر:</h6>
-                  <h6>15ريال</h6>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between align-items-center mt-2">
-                <button class="btn btn-primary round d-flex align-items-center remove-from-cart primary">
-                  <i class="fa-solid fa-trash me-2"></i>
-                  <span>إزالة من السلة</span>
-                </button>
-              </div>
-            </div>
-            <img src="images/header.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="card d-flex justify-content-between align-items-center flex-row bg">
-            <div class="d-flex flex-column">
-              <div class="info text">
-                <h5 class="fw-bold">اسم الدورة</h5>
-                <div class="d-flex gap-1 mt-3">
-                  <h6>السعر:</h6>
-                  <h6>15ريال</h6>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between align-items-center mt-2">
-                <button class="btn btn-primary round d-flex align-items-center remove-from-cart primary">
-                  <i class="fa-solid fa-trash me-2"></i>
-                  <span>إزالة من السلة</span>
-                </button>
-              </div>
-            </div>
-            <img src="images/header.jpg" alt="">
+            <a href="#">
+              <img src="images/download-apple.png" alt="download-apple">
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="offcanvas-footer p-3 d-flex justify-content-center flex-column">
-      <h5 class="offcanvas-title " id="offcanvasExampleLabel">تفاصيل الدفع</h5>
-      <div class=" d-flex justify-content-between align-items-center my-3">
-        <h4 class="offcanvas-title" id="offcanvasExampleLabel">الإجمالي</h4>
-        <p><span>200</span>ريال</p>
-      </div>
-      <a href="#" class=" btn btn-primary round">الدفع</a>
-    </div>
-  </div>
-  <!-- ============================================ -->
+  </section>
 
 
-
-  <header class="header">
-
-    <div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
-      tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title fs-5" id="exampleModalToggleLabel">حجز موعد</h3>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <section class="subscribe mb-5">
+    <div class="container">
+      <div class="subs-cont">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="text">
+              <h4>اشترك ليصلك اخر التحديثات</h4>
+              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+            </div>
           </div>
-          <div class="modal-body px-3">
+          <div class="col-md-6">
             <form action="" class="form">
-              <div class="row gy-3">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" />
+              <div class="row gy-3 justify-content-end">
+                <div class="col-md-12">
+                  <input type="email" class="form-control" placeholder="البريد الالكتروني">
                 </div>
-                <div class="col-md-6">
-                  <input type="tel" name="tel" class="form-control" placeholder="Your tel" />
-                </div>
-                <div class="col-md-6">
-                  <input type="text" required placeholder="date" value class="form-control flatpickr-input ">
-                </div>
-                <div class="col-md-6">
-                  <input type="email" name="email" class="form-control" placeholder="Your email" />
-                </div>
-                <div class="col-md-12 d-flex justify-content-end">
-                  <a href="#" class="btn btn-primary round padding">حجز<a>
+                <div class="col-md-6 d-flex justify-content-end">
+                  <button class="btn btn-primary subs-btn">اشتراك</button>
                 </div>
               </div>
             </form>
@@ -207,34 +429,47 @@
         </div>
       </div>
     </div>
-
-  </header>
-
-  <section class="cv wow fadeInUp">
-    <div class="container">
-      <div class="cv">
-        <img src="images/cv-rajaa.png" alt="">
-      </div>
-    </div>
   </section>
 
-  <footer class="py-4">
+
+
+  <footer class="py-5">
     <div class="container">
-      <a href="index.html" class="footer-logo wow fadeInUp">
-        <img src="images/Logo-02.png" alt="">
-      </a>
-      <hr>
-      <div class="social text-center wow fadeInUp">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+      <div class="footer-logo">
+        <img src="images/footer.svg" alt="">
       </div>
+      <ul class="footer-nav d-flex justify-content-evenly flex-wrap gap-2">
+        <li class="nav-item mx-2">
+          <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">من نحن</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">الخدمات</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">مميزات التطبيق</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">المدونة</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">تواصل معنا</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="#">الشروط والاحكام</a>
+        </li>
+      </ul>
     </div>
   </footer>
 
 
 
 
+
+
+  <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
 
   <!-- jQuery script -->
   <script src="js/plugin/jquery-3.6.1.min.js"></script>

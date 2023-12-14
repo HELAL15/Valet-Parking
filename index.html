@@ -43,9 +43,10 @@
 
 <body>
 
-  <header>
+  <header class="header">
     <!-- background-style for header -->
-    <img src="images/header-style.png" class="header-style" alt="">
+    <!-- <img src="images/header-style.png" class="header-style" alt=""> -->
+    <div class="header-style"></div>
     <!-- ------------------------- -->
     <nav class="navbar navbar-expand-lg " id="nav">
       <div class="container">
@@ -61,19 +62,19 @@
           </div>
           <ul class="navbar-nav m-auto">
             <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+              <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">من نحن</a>
+              <a class="nav-link" href="about.html">من نحن</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">الخدمات</a>
+              <a class="nav-link" href="services.html">الخدمات</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">مميزات التطبيق</a>
+              <a class="nav-link" href="features.html">مميزات التطبيق</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">تواصل معنا</a>
+              <a class="nav-link" href="contactUs.html">تواصل معنا</a>
             </li>
           </ul>
           <a href="request.html" class="btn btn-primary my-2 mx-2" type="submit">طلب تسجيل مرفق</a>
@@ -85,19 +86,40 @@
     </nav>
     <section class="landing mt-0 ">
       <div class="container">
-        <div class="sec-title">
-          <h3>تطبيق الفاليه</h3>
-          <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
-            للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
-        </div>
-        <div class="img">
-          <img src="images/header.png" alt="">
+        <div class="row ">
+          <div class="col-md-12">
+            <div class="sec-title">
+              <h3>تطبيق الفاليه</h3>
+              <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي
+                للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="img">
+              <img src="images/header.png" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </header>
 
-
+  <section class="download margin-t">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-12  justify-content-center">
+          <div class="download-links d-flex justify-content-center">
+            <a href="#">
+              <img src="images/download-android.png" alt="download-android">
+            </a>
+            <a href="#">
+              <img src="images/download-apple.png" alt="download-apple">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
@@ -105,7 +127,7 @@
   <section class="about mt-5">
     <div class="container">
       <div class="sec-title">
-        <h3>من نحن؟</h3>
+        <h3 class="mb-5">من نحن؟</h3>
       </div>
       <div class="row align-items-center">
         <div class="col-md-6">
@@ -185,7 +207,7 @@
   <section class="services">
     <div class="container">
       <div class="sec-title">
-        <h3>الخدمات</h3>
+        <h3 class="mb-5">الخدمات</h3>
       </div>
       <div class="row gy-4">
         <div class="col-md-4">
@@ -228,7 +250,7 @@
 
   <section class="intro py-5">
     <div class="sec-title">
-      <h3>الفيديو التعريفي</h3>
+      <h3 class="mb-5">الفيديو التعريفي</h3>
     </div>
     <div class="container">
       <div class="intro-video">
@@ -320,7 +342,7 @@
   <section class="packages my-5 py-5">
     <div class="container">
       <div class="sec-title">
-        <h3>الباقات</h3>
+        <h3 class="mb-5">الباقات</h3>
       </div>
       <div class="row gy-4">
         <div class="col-md-4">
@@ -438,7 +460,7 @@
   <footer class="py-5">
     <div class="container">
       <div class="footer-logo">
-        <img src="images/footer.svg" alt="">
+        <img src="images/footer.png" alt="">
       </div>
       <ul class="footer-nav d-flex justify-content-evenly flex-wrap gap-2">
         <li class="nav-item mx-2">
