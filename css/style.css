@@ -81,6 +81,10 @@ svg {
 .btn.padding{
   padding: 0.625rem 2rem ;
 }
+.t-background{
+  background-color: transparent !important;
+  font-size: 1.2rem;
+}
 .btn,
 .btn:focus {
   outline: none;
