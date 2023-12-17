@@ -349,12 +349,13 @@ nav.shadow{
 
 .nav-link{
   color: var(--white);
-  font-weight: bold;
+  font-weight: 600;
   transition: .3s;
 }
 .nav-link.active ,
 .nav-link:hover{
   color: var(--primary) !important;
+  font-weight: bold;
 }
 
 .navbar-toggler ,
