@@ -1205,8 +1205,16 @@ footer .footer-nav li a{
   transition: .3s;
 }
 
+.copy-right {
+  background-color: #f2f2f2;
+}
 
-
+.copy-right p{
+  margin-bottom: 0;
+}
+.copy-right .img{
+  width: 120px;
+}
 
 
 
