@@ -331,6 +331,9 @@ nav{
   width: 100%;
   transition: .3s;
 }
+nav .container{
+  gap: 1rem;
+}
 nav.shadow{
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.5);
   background-color: var(--main);
@@ -341,7 +344,7 @@ nav.shadow{
   margin-left: 0;
 }
 .navbar-nav{
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-link{
