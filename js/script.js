@@ -120,6 +120,12 @@ $(document).ready(function() {
 $(".flatpickr-input").flatpickr();
 
 
+  $('.multiple').select2({
+    placeholder: 'الخدمات'
+  });
+  
+
+
 new WOW().init();
 
 

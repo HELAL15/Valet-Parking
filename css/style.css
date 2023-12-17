@@ -508,11 +508,53 @@ header .header-style{
   border-radius: 42px;
   padding: 6rem 4rem;
 }
- .form .form-control{
+ .form .form-control,
+ .multiple {
   padding: .7rem ;
   background-color: #F8F8F8 !important;
   color: var(--main) !important;
 }
+.select2-container--default.select2-container .select2-selection--multiple {
+  padding: .7rem !important;
+  border: none !important;
+  outline: 0 !important;
+  background-color: #F8F8F8 !important;
+  color: var(--main) !important;
+}
+
+/* .select2-container--default .select2-selection--multiple {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: text;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  position: relative;
+} */
+.select2-container .select2-search--inline .select2-search__field {
+  border: none;
+  font-size: 1rem;
+  margin-top: 0px;
+  color: var(--main) !important;
+  height: 28px !important;
+  vertical-align: middle !important;
+  font-family: 'Almarai', sans-serif !important;
+}
+.select2-container .select2-search--inline .select2-search__field::-webkit-input-placeholder{
+  color: var(--main);
+}
+.select2-container .select2-search--inline .select2-search__field::-moz-placeholder{
+  color: var(--main);
+}
+.select2-container .select2-search--inline .select2-search__field:-ms-input-placeholder{
+  color: var(--main);
+}
+.select2-container .select2-search--inline .select2-search__field::-ms-input-placeholder{
+  color: var(--main);
+}
+.select2-container .select2-search--inline .select2-search__field::placeholder{
+  color: var(--main);
+} 
 .nice-select{
   float: right !important;
   text-align: right !important;
