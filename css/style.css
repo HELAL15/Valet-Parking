@@ -29,11 +29,14 @@
   padding: .5rem .7rem;
 }
 
+
 body {
   overflow-x: hidden !important;
   direction: rtl;
 }
-
+html[dir='ltr'] body{
+  direction: ltr !important;
+}
 .round{
   border-radius: 3.9375rem;
 
@@ -179,10 +182,14 @@ textarea{
 }
 
 
+
 [type=email], [type=number], [type=tel], [type=url] {
   direction: rtl !important;
 }
 
+html[dir='ltr'] [type=email],html[dir='ltr'] [type=number],html[dir='ltr'] [type=tel],html[dir='ltr'] [type=url] {
+  direction: ltr !important;
+}
 
 /* float icon */
 .float-icon {
@@ -244,7 +251,8 @@ textarea{
 
 .about .img,
 .vip .img,
-.use .img{
+.use .img,
+.download .img{
   width: 45%;
   position: relative;
   margin: auto;
@@ -258,7 +266,7 @@ textarea{
 }
  .back{
   position: relative;
-  justify-content: start;
+  justify-content: flex-start;
 }
  .back::before {
   content: '';
@@ -282,6 +290,15 @@ textarea{
  .back img {
   box-shadow: -114px 21px 100px rgba(0, 0, 0, 0.25);
   border-radius: 35px;
+}
+.back.another-side img {
+  box-shadow: 114px 21px 100px rgba(0, 0, 0, 0.25);
+}
+html[dir='ltr'] .back img{
+  box-shadow: 114px 21px 100px rgba(0, 0, 0, 0.25);
+}
+html[dir='ltr'] .back.another-side img {
+  box-shadow: -114px 21px 100px rgba(0, 0, 0, 0.25);
 }
 .margin-t{
   margin-top: 26rem !important;
@@ -492,10 +509,38 @@ header .header-style{
   padding: 6rem 4rem;
 }
  .form .form-control{
-  padding: .7rem !important;
+  padding: .7rem ;
   background-color: #F8F8F8 !important;
   color: var(--main) !important;
 }
+.nice-select{
+  float: right !important;
+  text-align: right !important;
+  padding-bottom: 2.2rem !important;
+  line-height: 25px !important;
+}
+html[dir='ltr'] .nice-select{
+  float: left !important;
+  text-align: left !important;
+}
+.nice-select:after {
+  right: unset;
+  left: 12px;
+}
+html[dir='ltr'] .nice-select:after {
+  right: 12px;
+  left: unset;
+}
+.nice-select .list{
+  width: 100%;
+}
+.nice-select .option {
+  text-align: right;
+}
+html[dir='ltr'] .nice-select .option {
+  text-align: left;
+}
+
  .form .form-control:focus{
   border-color: var(--primary) !important;
 }
@@ -564,8 +609,15 @@ header .header-style{
 }
 .breadcrumb-item+.breadcrumb-item::before {
   color: var(--white);
+  float: right !important;
 }
-
+html[dir='ltr'] .breadcrumb-item+.breadcrumb-item::before {
+  float: left !important;
+}
+html[dir='ltr'] .breadcrumb-item+.breadcrumb-item::before {
+  padding-left: unset;
+  padding: 0 .5rem;
+}
 /*================================================
 ================= services =======================
 =================================================*/
@@ -834,8 +886,12 @@ header .header-style{
 ================== download ===================
 ==============================================*/
 
-.download .one{
-  margin-right: -14rem;
+.download .one {
+  margin-right: -8rem;
+}
+html[dir='ltr'] .download .one {
+  margin-right: unset;
+  margin-left: -8rem;
 }
 .download .text h4 {
   font-size: 4rem;

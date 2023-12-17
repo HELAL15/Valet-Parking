@@ -113,19 +113,21 @@ const for_pause = ()=>{
 }
 
 
+$(document).ready(function() {
+  $('select').niceSelect();
+});
+
 $(".flatpickr-input").flatpickr();
 
 
 new WOW().init();
 
 
-
-
-
-
+/*=======================================*/
 
 
 const Body = document.getElementsByTagName('body')[0];
+
 let rtlValue = false;
 if (Body.style.direction = 'rtl') {
   rtlValue = true;
