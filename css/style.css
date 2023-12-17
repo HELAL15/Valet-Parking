@@ -1211,6 +1211,7 @@ footer .footer-nav li a{
 
 .copy-right p{
   margin-bottom: 0;
+  font-size: 1rem;
 }
 .copy-right .img{
   width: 120px;
@@ -1313,6 +1314,15 @@ footer .footer-nav li a{
   .navbar-collapse.active{
     right: 0;
   }
+  html[dir='ltr'] .navbar-collapse{
+    right: unset;
+    left: -100%;
+  }
+
+  html[dir='ltr'] .navbar-collapse.active{
+    left: 0;
+  }
+
   .collapse-header{
     display: flex !important;
   }
@@ -1337,6 +1347,11 @@ footer .footer-nav li a{
 
 .navbar-nav {
   margin-right: 1rem !important;
+}
+
+html[dir='ltr'] .navbar-nav {
+  margin-right: unset ;
+  margin-left: 1rem !important;
 }
 
 
@@ -1496,6 +1511,18 @@ header.header {
   .navbar-brand {
     width: 140px;
   }
+
+
+  .copy-right p{
+    margin-bottom: 0;
+    font-size: .8rem;
+  }
+  .copy-right .img{
+    width: 100px;
+  }
+
+
+
 }
 
 
